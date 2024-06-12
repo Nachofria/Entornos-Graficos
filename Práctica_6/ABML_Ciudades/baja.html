@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Baja de Ciudad</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Baja de Ciudad</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.php">Inicio</a></li>
+            <li><a href="alta.html">Alta de Ciudad</a></li>
+            <li><a href="modificacion.html">Modificación de Ciudad</a></li>
+            <li><a href="listado.php">Listado de Ciudades</a></li>
+            <li><a href="listado_paginacion.php">Listado de Ciudades con Paginación</a></li>
+        </ul>
+    </nav>
+    <form action="baja.php" method="post">
+        <label for="id">ID de la Ciudad a Eliminar:</label>
+        <input type="number" id="id" name="id" required>
+        
+        <input type="submit" value="Eliminar Ciudad">
+    </form>
+    <button onclick="history.go(-1);">Volver atrás</button>
+</body>
+</html>
+

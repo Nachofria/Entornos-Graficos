@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Modificación de Ciudad</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Modificación de Ciudad</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.php">Inicio</a></li>
+            <li><a href="alta.html">Alta de Ciudad</a></li>
+            <li><a href="baja.html">Baja de Ciudad</a></li>
+            <li><a href="listado.php">Listado de Ciudades</a></li>
+            <li><a href="listado_paginacion.php">Listado de Ciudades con Paginación</a></li>
+        </ul>
+    </nav>
+    <form action="modificacion.php" method="post">
+        <label for="id">ID de la Ciudad a Modificar:</label>
+        <input type="number" id="id" name="id" required>
+        
+        <label for="ciudad">Nueva Ciudad:</label>
+        <input type="text" id="ciudad" name="ciudad">
+        
+        <label for="pais">Nuevo País:</label>
+        <input type="text" id="pais" name="pais">
+        
+        <label for="habitantes">Nuevos Habitantes:</label>
+        <input type="number" id="habitantes" name="habitantes">
+        
+        <label for="superficie">Nueva Superficie:</label>
+        <input type="number" step="0.01" id="superficie" name="superficie">
+        
+        <label for="tieneMetro">¿Tiene Metro? (1: Sí, 0: No):</label>
+        <input type="number" id="tieneMetro" name="tieneMetro">
+        
+        <input type="submit" value="Modificar Ciudad">
+    </form>
+    <button onclick="history.go(-1);">Volver atrás</button>
+</body>
+</html>
+
