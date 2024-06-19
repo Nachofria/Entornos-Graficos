@@ -1,0 +1,4 @@
+CREATE TABLE prueba.buscador (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    cancion VARCHAR(100) NOT NULL
+);
