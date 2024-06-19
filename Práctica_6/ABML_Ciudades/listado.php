@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "Capitales";
+$database = "ciudades";
 
 $link = mysqli_connect($servername, $username, $password, $database);
 
